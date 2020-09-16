@@ -4,8 +4,23 @@ Returns: a List of integers
 '''
 def moving_zeroes(arr):
     # Your code here
+    left =[]
+    right = []
 
-    pass
+    for x in arr:
+        if x == 0:
+            right.append(x)
+        else:
+            left.append(x)
+
+    print(f"This is the left list {left}")    
+    print(f"This is the right list {right}")    
+    print(left.extend(right))
+    # print(arr)
+    return arr
+
+
+    
 
 
 if __name__ == '__main__':
