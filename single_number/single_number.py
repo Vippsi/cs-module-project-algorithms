@@ -4,8 +4,21 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
+    nums = []
+    for i in arr:
+        if i in nums:
+            nums.remove(i)
+        else:
+            nums.append(i)
+    return nums.pop()
 
-    pass
+        
+
+    # cool bitwise exclusive opporator solution i found
+    # a = 0
+    # for i in arr:
+    #     a ^= i
+    # return a
 
 
 if __name__ == '__main__':
